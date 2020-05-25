@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTunesAPI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                  <i></i>
+                  iTunesAPI
+                </a>
+            </nav>
+        </header>
+
+        <div class="input-group mt-5">
+            <input type="text" id="search-word" class="form-control" placeholder="曲名、歌手名を入れてください" aria-label="曲名、歌手名を入れてください" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id='search-btn'>検索</button>
+            </div>
+        </div>
+
+        <h2 class="bg-primary mt-5 p-3 text-white rounded" style="font-size: 1rem;">検索結果</h2>
+
+        <div class="row" id="results"></div>
+        
+        
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
